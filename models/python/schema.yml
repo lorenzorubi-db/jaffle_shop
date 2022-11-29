@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: user_random_numbers
+    description: customers with random numbers
+    columns:
+      - name: id
+        description: the primary key for this table
+        tests:
+          - unique
+          - not_null
+      - name: user_random_number
+        description: score
+        tests:
+          - not_null
