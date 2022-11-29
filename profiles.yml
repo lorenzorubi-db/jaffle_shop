@@ -1,0 +1,10 @@
+ jaffle_shop:
+   target: databricks_job
+   outputs:
+     databricks_job:
+      type: databricks
+      method: http
+      schema: "dbt_test"
+      host: "e2-demo-field-eng.cloud.databricks.com"
+      http_path: "/sql/1.0/warehouses/ead10bf07050390f"
+      token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
