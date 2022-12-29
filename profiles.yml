@@ -3,8 +3,8 @@
    outputs:
      databricks_job:
       type: databricks
-      method: http
-      schema: "dbt_test"
+      schema: "default"
       host: "e2-demo-field-eng.cloud.databricks.com"
-      http_path: "/sql/1.0/warehouses/ead10bf07050390f"
+      £ http_path: "/sql/1.0/warehouses/ead10bf07050390f"
+      http_path: "sql/protocolv1/o/1444828305810485/1011-090100-bait793"
       token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
