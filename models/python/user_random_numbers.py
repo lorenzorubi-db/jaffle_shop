@@ -10,7 +10,8 @@
 
 import importlib
 
-importlib.import_module("app.add_random_udf")
+module = importlib.import_module("app.add_random_udf")
+add_random = getattr(module, "add_random")
 
 
 def model(dbt, session):
