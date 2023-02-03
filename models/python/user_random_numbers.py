@@ -1,12 +1,16 @@
-import pyspark.sql.types as T
-import pyspark.sql.functions as F
-import random
+# # import pyspark.sql.types as T
+# # import pyspark.sql.functions as F
+# import random
 
 
-@F.udf(returnType=T.IntegerType())
-def add_random(x):
-   random_number = random.randint(1,99)
-   return x + random_number
+# # @F.udf(returnType=T.IntegerType())
+# def add_random(x):
+#    random_number = random.randint(1,99)
+#    return x + random_number
+
+import importlib
+
+importlib.import_module("app.add_random_udf")
 
 
 def model(dbt, session):

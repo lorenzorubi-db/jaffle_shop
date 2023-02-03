@@ -1,7 +1,17 @@
-
 target/
 dbt_modules/
 logs/
 **/.DS_Store
 
 .idea
+.user.yml
+
+.databricks
+
+*.code-workspace
+
+build
+dist
+*.egg-info
+
+__pycache__
