@@ -1,17 +1,17 @@
  jaffle_shop:
-   target: all_purpose
+   target: sql_warehouse
    outputs:
      all_purpose:
       type: databricks
       schema: "lr_dbt_tests"
-      host: "e2-demo-field-eng.cloud.databricks.com"
-      http_path: "sql/protocolv1/o/1444828305810485/1011-090100-bait793"
+      host: "adb-984752964297111.11.azuredatabricks.net"
+      http_path: "sql/protocolv1/o/984752964297111/0812-165614-tibia842"
       token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
      sql_warehouse:
       type: databricks
       schema: "lr_dbt_tests"
-      host: "e2-demo-field-eng.cloud.databricks.com"
-      http_path: "/sql/1.0/warehouses/ead10bf07050390f"
+      host: "adb-984752964297111.11.azuredatabricks.net"
+      http_path: "/sql/1.0/warehouses/2e78d4a8647e3893"
       token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
      spark_localhost:
       type: spark
