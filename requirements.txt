@@ -1,4 +1,2 @@
 dbt-core
-pyodbc
-dbt-databricks==1.3.3rc1.dev2
-dist/jaffle_shop-0.0.1-py3-none-any.whl
+dbt-databricks
